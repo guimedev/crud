@@ -1,0 +1,6 @@
+.post-card-list {
+  display: grid;
+  gap: 32rem;
+
+  margin-bottom: 32rem;
+}

@@ -1,0 +1,5 @@
+.popup-card {
+  border: var(--borderWidth) solid black;
+  padding: 20rem;
+  background-color: white;
+}

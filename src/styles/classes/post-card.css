@@ -1,0 +1,13 @@
+.post-card {
+  display: grid;
+  gap: 8rem;
+
+  width: 300rem;
+  padding: var(--padding);
+  box-shadow: var(--offsetX) var(--offsetY) 0 0 black;
+  border: var(--borderWidth) solid black;
+}
+
+.container > .post-card {
+  margin-top: 32rem;
+}

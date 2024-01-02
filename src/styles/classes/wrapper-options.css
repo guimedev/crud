@@ -1,0 +1,14 @@
+.wrapper-options {
+  display: none;
+  gap: 8rem;
+
+  position: absolute;
+  top: 104%;
+  right: 0;
+
+  border: 2rem solid lightgray;
+  padding: var(--padding);
+  background-color: white;
+
+  z-index: 1;
+}

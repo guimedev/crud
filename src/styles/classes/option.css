@@ -1,0 +1,14 @@
+.option {
+  --fontSize: 14rem;
+  --padding: calc(var(--fontSize) / 2);
+
+  font-size: var(--fontSize);
+  border: none;
+  padding: calc(var(--padding) / 2) var(--padding);
+  background-color: #d3d3d3;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: #a0a0a0;
+}

@@ -1,0 +1,20 @@
+/* Settings */
+@import './src/styles/settings/root.css';
+
+/* Base */
+@import './src/styles/base/normalize.css';
+
+/* Classes */
+@import './src/styles/classes/container.css';
+@import './src/styles/classes/post-card.css';
+@import './src/styles/classes/textarea.css';
+@import './src/styles/classes/button.css';
+@import './src/styles/classes/option.css';
+@import './src/styles/classes/post-card-list.css';
+@import './src/styles/classes/resources.css';
+@import './src/styles/classes/wrapper-menu.css';
+@import './src/styles/classes/menu-icon.css';
+@import './src/styles/classes/wrapper-options.css';
+@import './src/styles/classes/popup.css';
+@import './src/styles/classes/popup-card.css';
+@import './src/styles/classes/popup-options-wrapper.css';

@@ -1,0 +1,31 @@
+.button {
+  --fontSize: 16rem;
+  --padding: calc(var(--fontSize) / 2);
+
+  font-size: 16rem;
+
+  box-shadow: var(--offsetX) var(--offsetY) 0 0 black;
+  border: var(--borderWidth) solid black;
+  padding: calc(var(--padding) / 2) var(--padding);
+
+  position: relative;
+  right: 2rem;
+  bottom: 2rem;
+  
+  cursor: pointer;
+}
+
+.button:active {
+  right: 0;
+  bottom: 0;
+
+  box-shadow: none;
+}
+
+.post-card .button {
+  justify-self: end;
+}
+
+.post-card-list .button {
+  display: none;
+}

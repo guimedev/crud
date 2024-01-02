@@ -1,0 +1,24 @@
+.menu-icon {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 4rem;
+
+  width: 36rem;
+  height: 36rem;
+  border: 0;
+  border-radius: 50rem;
+  padding: var(--padding);
+  background-color: #87cefa;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4rem;
+  border-radius: 50rem;
+  background-color: black;
+}

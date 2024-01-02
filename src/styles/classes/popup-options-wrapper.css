@@ -1,0 +1,5 @@
+.popup-options-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  /* position: static; */
+}

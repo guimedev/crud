@@ -1,0 +1,10 @@
+:root {
+  font-size: 6.25%;
+  
+  --lineHeight: 1.15;
+  --fontSize: 16rem;
+  --padding: 8rem;
+  --borderWidth: 2rem;
+  --offsetX: 2rem;
+  --offsetY: 2rem;
+}
