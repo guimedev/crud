@@ -14,6 +14,8 @@ import { savePostEdit } from "../functions/savePostEdit.js";
 import { removeListPost } from "../functions/removeListPost.js";
 import { enableButton } from "../functions/enableButton.js";
 
+const { body } = document;
+
 export function ListPostCard() {
   const element = CreateElement('li', { class: 'post-card' });
   const resources = CreateElement('div', { class:'resources' }, null, element);
@@ -24,8 +26,8 @@ export function ListPostCard() {
   const deleteOpt = Option('excluir', wrapperOptions);
   const popup = Popup()
   const listTextarea = Textarea('', element);
-  const listButton = Button('Postar', element);
-  const { body } = document;
+  const listButton = Button('salvar', element);
+  
   const [ bar1, bar2, bar3 ] = menuIcon.children;
   const [ card ] = popup.children
   const [ , options ] = card.children;
@@ -34,10 +36,12 @@ export function ListPostCard() {
   sendContentToListPost(listTextarea, textarea, button);
 
   body.addEventListener('click', (event) => {
+    const allMenuIcons = document.querySelectorAll('.menu-icon');
+
     enableOptionsWrapperDisplay(event.target, menuIcon, bar1, bar2, bar3, wrapperOptions);
     enableMenuIconBackgroundColor(wrapperOptions, menuIcon);
-    editListPostTextarea(event.target, editOpt, listTextarea, listButton, textarea);
-    savePostEdit(event.target, listButton, listTextarea, textarea);
+    editListPostTextarea(event.target, editOpt, listTextarea, listButton, textarea, allMenuIcons);
+    savePostEdit(event.target, listButton, listTextarea, textarea, allMenuIcons);
     removeListPost(event.target, deleteOpt, confirm, cancel, popup, element, body);
   });
 

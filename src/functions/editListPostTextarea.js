@@ -1,8 +1,10 @@
-export function editListPostTextarea(target, editOpt, listPostTextarea, listPostButton, postTextarea) {
+export function editListPostTextarea(target, editOpt, listTextarea, listButton, Textarea, allMenuIcons) {
   if (target === editOpt) {
-    listPostTextarea.readOnly = false;
-    listPostButton.style.display = 'block';
-    listPostButton.disabled = false;
-    postTextarea.disabled = true;
+    listTextarea.readOnly = false;
+    listButton.style.display = 'block';
+    listButton.disabled = false;
+    Textarea.disabled = true;
+    
+    allMenuIcons.forEach((menuIcon) => menuIcon.disabled = true);
   }
 }
