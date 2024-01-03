@@ -1,14 +1,19 @@
-import { CreateElement } from "./create-element.js";
-import { textarea, button } from "../../index.js";
+import CreateElement from './CreateElement.js';
+import { textarea, button } from '../../index.js';
 
-import { enableButton } from "../functions/enable-button.js";
+import { enableButton } from '../functions/enableButton.js';
 
 export default function Textarea(placeHolder, parent) {
-  const element = CreateElement('textarea', {
-    class: 'textarea',
-    maxLength: 280,
-    placeHolder: placeHolder
-  }, null, parent);
+  const element = CreateElement(
+    'textarea',
+    {
+      class: 'textarea',
+      maxLength: 280,
+      placeHolder: placeHolder
+    },
+    null,
+    parent
+  );
 
   element.addEventListener('input', () => {
     element.style.height = '';
@@ -16,6 +21,6 @@ export default function Textarea(placeHolder, parent) {
 
     enableButton(textarea, button);
   });
-  
+
   return element;
 }

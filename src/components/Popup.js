@@ -1,5 +1,5 @@
-import { CreateElement } from './create-element.js';
-import { Option } from './option.js';
+import CreateElement from './CreateElement.js';
+import Option from './Option.js';
 
 export default function Popup() {
   const element = CreateElement('div', { class: 'popup' }, null, document.body);

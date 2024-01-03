@@ -14,3 +14,4 @@ export default function CreateElement(elementName, attributes, textContent = nul
 
   return element;
 }
+
