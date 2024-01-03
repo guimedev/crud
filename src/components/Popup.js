@@ -1,7 +1,7 @@
 import { CreateElement } from './create-element.js';
 import { Option } from './option.js';
 
-export function Popup() {
+export default function Popup() {
   const element = CreateElement('div', { class: 'popup' }, null, document.body);
   const card = CreateElement('div', { class: 'popup-card' }, null, element);
   const para = CreateElement(

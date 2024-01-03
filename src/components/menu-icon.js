@@ -1,6 +1,6 @@
 import { CreateElement } from "./create-element.js";
 
-export function MenuIcon(parent) {
+export default function MenuIcon(parent) {
   const element = CreateElement(
     'button', 
     { class: 'menu-icon'},

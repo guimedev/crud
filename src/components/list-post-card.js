@@ -16,7 +16,7 @@ import { enableButton } from '../functions/enable-button.js';
 
 const { body } = document;
 
-export function ListPostCard() {
+export default function ListPostCard() {
   const element = CreateElement('li', { class: 'post-card' });
   const resources = CreateElement('div', { class: 'resources' }, null, element);
   const wrapperMenu = CreateElement(

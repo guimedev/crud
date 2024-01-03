@@ -1,6 +1,6 @@
 import { CreateElement } from "./create-element.js";
 
-export function PostCard(parent) {
+export default function PostCard(parent) {
   const element = CreateElement(
     'div',
     { class: 'post-card' },

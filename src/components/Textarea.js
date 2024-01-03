@@ -3,7 +3,7 @@ import { textarea, button } from "../../index.js";
 
 import { enableButton } from "../functions/enable-button.js";
 
-export function Textarea(placeHolder, parent) {
+export default function Textarea(placeHolder, parent) {
   const element = CreateElement('textarea', {
     class: 'textarea',
     maxLength: 280,

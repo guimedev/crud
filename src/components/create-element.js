@@ -1,4 +1,4 @@
-export function CreateElement(elementName, attributes, textContent = null, parent = null) {
+export default function CreateElement(elementName, attributes, textContent = null, parent = null) {
   const element = document.createElement(elementName);
   const attrAsArray = Object.entries(attributes);
 
