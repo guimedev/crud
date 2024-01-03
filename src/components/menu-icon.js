@@ -1,4 +1,4 @@
-import { CreateElement } from "./CreateElement.js";
+import { CreateElement } from "./create-element.js";
 
 export function MenuIcon(parent) {
   const element = CreateElement(

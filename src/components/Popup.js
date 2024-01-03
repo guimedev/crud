@@ -1,16 +1,21 @@
-import { CreateElement } from "./CreateElement.js";
-import { Option } from "./Option.js";
+import { CreateElement } from './create-element.js';
+import { Option } from './option.js';
 
 export function Popup() {
   const element = CreateElement('div', { class: 'popup' }, null, document.body);
   const card = CreateElement('div', { class: 'popup-card' }, null, element);
   const para = CreateElement(
-    'p', 
-    { class: 'popup-question' }, 
-    'Realmente deseja excluir o post?', 
+    'p',
+    { class: 'popup-question' },
+    'Realmente deseja excluir o post?',
     card
   );
-  const wrapperOptions = CreateElement('div', { class: 'popup-options-wrapper' }, null, card);
+  const wrapperOptions = CreateElement(
+    'div',
+    { class: 'popup-options-wrapper' },
+    null,
+    card
+  );
   const confirm = Option('confirmar', wrapperOptions);
   const cancel = Option('cancelar', wrapperOptions);
 

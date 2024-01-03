@@ -1,4 +1,4 @@
-import { CreateElement } from "./CreateElement.js";
+import { CreateElement } from "./create-element.js";
 
 export function Button(textContent, parent) {
   const element = CreateElement('button', {

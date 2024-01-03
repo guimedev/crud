@@ -1,7 +1,7 @@
-import { CreateElement } from "./CreateElement.js";
+import { CreateElement } from "./create-element.js";
 import { textarea, button } from "../../index.js";
 
-import { enableButton } from "../functions/enableButton.js";
+import { enableButton } from "../functions/enable-button.js";
 
 export function Textarea(placeHolder, parent) {
   const element = CreateElement('textarea', {
